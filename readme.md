@@ -22,9 +22,9 @@ is crucial because user/input queries to the vector database
 are often in the form of questions whereas the content of
 the database is not. To rewrite the query, the agent uses the
 description of the retrieval tool, which is a brief description
-of the data/documents stored in the vector database.
+of the data/documents stored in the vector database. The hyperparameters for RAG were tuned in a broad range and the final values are reported in the table below.
 
-The hyperparameters for RAG were tuned in a broad range and the final values are reported in the table below.
+![plot](./figs/table.png)
 
 
 
