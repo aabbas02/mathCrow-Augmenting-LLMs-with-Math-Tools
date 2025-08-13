@@ -64,7 +64,10 @@ messages) and edges analyze, given the current state, the
 next node to transition to. For a visual representation of the
 mathCrow agentic framework, see the figure below.
 
-![plot](./figs/mathCrowFig.png)
+
+<p align="center">
+<img src="/figs/mathCrowFig.png"/>
+</p>
 
 ## Results
 
