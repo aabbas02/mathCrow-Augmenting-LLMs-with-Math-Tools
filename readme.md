@@ -2,7 +2,7 @@
 
 ## Abstract
 
-mathCrow is a proof-of-concept extension of ChemCrow [1] to math-based tasks. The mathCrow agent has access to two expertly designed tools and the ability to independently determine which tool to call to accomplish a given task, providing greater autonomy than a human-based framework, where a human expert would parse the input prompt, decide which tool to call and preprocess the data according to the requirements of the selected tool. We provide an open-source/zero cost implementation of mathCrow using Meta’s llama3.3 model and Huggingface embeddings. We test our proposed mathCrow framework on text datasets derived from two research papers and with complex linear assignment problems (LAP). Our results show that mathCrow i) reduces hallucinations in LLM generated responses, and ii) increases autonomous task completion by formulating a precise linear assignment problem from a complex input prompt. Interestingly, our results also confirm that, for the reasoning-based LAP task, GPT-o reasoning models perform better than their general counterparts.
+mathCrow is a proof-of-concept extension of ChemCrow for math-based tasks. The agent autonomously selects and uses two specialized tools, replacing the need for human decision makoing in tool choice and data preprocessing. We provide an open-source, zero-cost implementation using Meta’s Llama 3.3 and HuggingFace embeddings, and evaluate it on datasets from two research papers and complex linear assignment problems (LAP). Results show mathCrow reduces hallucinations, improves autonomous task completion, and confirms that GPT-o reasoning models outperform general models for LAP reasoning tasks.
 
 ## Description
 
@@ -23,6 +23,10 @@ are often in the form of questions whereas the content of
 the database is not. To rewrite the query, the agent uses the
 description of the retrieval tool, which is a brief description
 of the data/documents stored in the vector database.
+
+The hyperparameters for RAG were tuned in a broad range and the final values are reported in the table below.
+
+
 
 #### Tool 2 Linear Assignment Problem (LAP) solver
 
