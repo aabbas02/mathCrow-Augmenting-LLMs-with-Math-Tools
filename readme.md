@@ -79,4 +79,4 @@ The results for the RAG Tool are below. Notice how the agentic framework accepts
 
 ## References
 1.  Andres M. Bran, Sam Cox, Oliver Schilter, Carlo Baldassari, Andrew D White, and Philippe Schwaller. Augmenting large language models with chemistry tools. Nature Machine Intelligence, 6(5):525–535, 2024.
-2.  
+2.  Ruolin Liu and Julie Dickerson. Strawberry: Fast and accurate genomeguided transcript reconstruction and quantification from rna-seq. PLoS computational biology, 13(11):e1005851, 2017.
