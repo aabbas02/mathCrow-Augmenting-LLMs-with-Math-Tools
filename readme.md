@@ -66,6 +66,17 @@ mathCrow agentic framework, see the figure below.
 
 ## Results
 
+### RAG RESULTS
+The results for the RAG Tool are below. The relevant text for the RAG model was the reserach paper [2].
+![plot](./figs/RAG_RESULTS.png)
+
+
+
+### LAP SOLVER RESULTS
+The results for the RAG Tool are below. Notice how the agentic framework accepts a natural language description of the problem, formulates a mathematical problem (incorrectly formulated by the non-reasonin model) and calls the appropriate solver.
+![plot](./figs/LAP_RESULTS.png)
+
 
 ## References
 1.  Andres M. Bran, Sam Cox, Oliver Schilter, Carlo Baldassari, Andrew D White, and Philippe Schwaller. Augmenting large language models with chemistry tools. Nature Machine Intelligence, 6(5):525–535, 2024.
+2.  
