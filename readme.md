@@ -2,7 +2,7 @@
 
 ## Abstract
 
-mathCrow is a proof-of-concept extension of ChemCrow [1] to math-based tasks. The mathCrow agent has access to two expertly designed tools and the ability to independently determine which tool to call to accomplish a given task. This framework provides greater autonomy than a human-based framework, where a human expert would parse the input prompt, decide which tool (function or software package) to call and preprocess the data according to the requirements of the selected tool. We provide an open-source/zero cost implementation of mathCrow using Meta’s llama3.3 model and Huggingface embeddings. We test our proposed mathCrow framework on text datasets derived from two research papers and with complex linear assignment problems (LAP). Our results show that mathCrow i) reduces hallucinations in LLM generated responses, and ii) increases autonomous task completion by formulating a precise linear assignment problem from a complex input prompt. Interestingly, our results also confirm that, for the reasoning-based LAP task, GPT-o reasoning models perform better than their general counterparts.
+mathCrow is a proof-of-concept extension of ChemCrow [1] to math-based tasks. The mathCrow agent has access to two expertly designed tools and the ability to independently determine which tool to call to accomplish a given task, providing greater autonomy than a human-based framework, where a human expert would parse the input prompt, decide which tool (function or software package) to call and preprocess the data according to the requirements of the selected tool. We provide an open-source/zero cost implementation of mathCrow using Meta’s llama3.3 model and Huggingface embeddings. We test our proposed mathCrow framework on text datasets derived from two research papers and with complex linear assignment problems (LAP). Our results show that mathCrow i) reduces hallucinations in LLM generated responses, and ii) increases autonomous task completion by formulating a precise linear assignment problem from a complex input prompt. Interestingly, our results also confirm that, for the reasoning-based LAP task, GPT-o reasoning models perform better than their general counterparts.
 
 ## Description
 
@@ -38,8 +38,7 @@ The vector store is an external storage that contains the
 dense embeddings of the text. A key design requirement
 of the vector store is that it should allow a fast similarity
 search of the stored text with the input query. There are
-two widely used vector dataabaes: FAISS from Meta [8] and
-Chroma [10]. It is important to note thats the input query
+two widely used vector dataabaes: FAISS from Meta and Chroma. It is important to note thats the input query
 and the documents in the database are compared based off of
 the numerical embeddings. This is unlike other word-based
 frequency matching methods such as TF-IDF.
@@ -59,7 +58,7 @@ messages) and edges analyze, given the current state, the
 next node to transition to. For a visual representation of the
 mathCrow agentic framework, see the figure below.
 
-![plot](./figures/problem_setup.png)
+![plot](./figs/mathCrowFig.png)
 
 ## Results
 
