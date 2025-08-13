@@ -2,7 +2,7 @@
 
 ## Abstract
 
-mathCrow is a proof-of-concept extension of ChemCrow [1] to math-based tasks. The mathCrow agent has access to two expertly designed tools and the ability to independently determine which tool to call to accomplish a given task. This framework provides greater autonomy than a human-based framework, where a human expert would parse the input prompt, decide which tool (function or software package) to call and preprocess the data according to the requirements of the selected tool. We provide an open-source/zero cost implementation of mathCrow using Meta’s llama3.3 model and Huggingface embeddings (in addition to a simpler implementation with paid OpenAI LLM models and embeddings). We test our proposed mathCrow framework on text datasets derived from two research papers and with complex linear assignment problems (LAP). Our results show that mathCrow i) reduces hallucinations in LLM generated responses, and ii) increases autonomous task completion by formulating a precise linear assignment problem from a complex input prompt. Interestingly, our results also confirm that, for the reasoning-based LAP task, GPT-o reasoning models perform better than their general counterparts.
+mathCrow is a proof-of-concept extension of ChemCrow [1] to math-based tasks. The mathCrow agent has access to two expertly designed tools and the ability to independently determine which tool to call to accomplish a given task. This framework provides greater autonomy than a human-based framework, where a human expert would parse the input prompt, decide which tool (function or software package) to call and preprocess the data according to the requirements of the selected tool. We provide an open-source/zero cost implementation of mathCrow using Meta’s llama3.3 model and Huggingface embeddings. We test our proposed mathCrow framework on text datasets derived from two research papers and with complex linear assignment problems (LAP). Our results show that mathCrow i) reduces hallucinations in LLM generated responses, and ii) increases autonomous task completion by formulating a precise linear assignment problem from a complex input prompt. Interestingly, our results also confirm that, for the reasoning-based LAP task, GPT-o reasoning models perform better than their general counterparts.
 
 ## Description
 
@@ -47,7 +47,19 @@ frequency matching methods such as TF-IDF.
 
 ## Algorithm and LangGraph Implementation
 
+We use LangGraph, which implements agentic frameworks using states, nodes and edges. States
+are represented by a global variable, usually a list of strings.
+The graph begins at the ‘start’ node with the state variable
+equal to input query. The state is then passed from the start
+node, through a sequence of nodes, to the ‘end’ node. The
+state flow (transitioning between nodes) is controlled by edges.
+Nodes and edges are both represented by python function.
+Typically, nodes modify the state (by appending the list of
+messages) and edges analyze, given the current state, the
+next node to transition to. For a visual representation of the
+mathCrow agentic framework, see the figure below.
 
+![plot](./figures/problem_setup.png)
 
 ## Results
 
