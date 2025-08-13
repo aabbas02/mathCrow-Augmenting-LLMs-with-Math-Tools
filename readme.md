@@ -24,7 +24,9 @@ the database is not. To rewrite the query, the agent uses the
 description of the retrieval tool, which is a brief description
 of the data/documents stored in the vector database. The hyperparameters for RAG were tuned in a broad range and the final values are reported in the table below.
 
-![plot](./figs/table.png)
+<p align="center">
+<img src="/figs/table.png"/>
+</p>
 
 
 
@@ -70,16 +72,15 @@ mathCrow agentic framework, see the figure below.
 The results for the RAG Tool are below. The relevant text for the RAG model was the reserach paper [2].
 
 <p align="center">
-![plot](./figs/RAG_RESULTS.png)
+<img src="./figs/RAG_RESULTS.png"/>
 </p>
 
 
 ### LAP SOLVER RESULTS
 The results for the RAG Tool are below. Notice how the agentic framework accepts a natural language description of the problem, formulates a mathematical problem (incorrectly formulated by the non-reasonin model) and calls the appropriate solver.
 <p align="center">
-![plot](./figs/LAP_RESULTS.png)
+<img src="./figs/LAP_RESULTS.png"/>
 </p>
-
 
 ## References
 1.  Andres M. Bran, Sam Cox, Oliver Schilter, Carlo Baldassari, Andrew D White, and Philippe Schwaller. Augmenting large language models with chemistry tools. Nature Machine Intelligence, 6(5):525–535, 2024.
