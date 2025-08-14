@@ -12,7 +12,7 @@ and B) memory.
 ### A) Tools Description
 #### Tool 1 Agentic-Retrieval Augmented Generation (RAG) Tool: 
 
-The difference between agentic RAG and RAG is that  while both methods involve retrieving context from
+The difference between agentic RAG and RAG is that  while both involve retrieving context from
 an external vector database, agentic RAG, where recall
 that the agent is essentially an LLM, rewrites the query before
 searching for relevant context in the vector database. This
