@@ -55,7 +55,7 @@ equal to input query. The state is then passed from the start
 node, through a sequence of nodes, to the ‘end’ node. The
 state flow (transitioning between nodes) is controlled by edges.
 Nodes and edges are both represented by python function.
-Typically, nodes modify the state (by appending the list of
+Typically, nodes modify the state (by appending to the list of
 messages) and edges analyze, given the current state, the
 next node to transition to. For a visual representation of the
 mathCrow agentic framework, see the figure below.
