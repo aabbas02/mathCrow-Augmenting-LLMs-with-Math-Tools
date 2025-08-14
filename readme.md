@@ -72,7 +72,7 @@ The results for the RAG Tool are below. The relevant text for the RAG model was 
 
 
 ### LAP SOLVER RESULTS
-The results for the RAG Tool are below. Notice how the agentic framework accepts a natural language description of the problem, formulates a mathematical problem (incorrectly formulated by the non-reasonin model) and calls the appropriate solver.
+The results for the RAG Tool are below. Notice how the agentic framework accepts a natural language description of the problem, formulates a mathematical problem (incorrectly formulated by the non-reasoning model) and calls the appropriate solver.
 <img src="./figs/LAP_RESULTS.png"/>
 
 ## References
