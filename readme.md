@@ -2,7 +2,7 @@
 
 ## Abstract
 
-mathCrow is a proof-of-concept extension of ChemCrow [1] for math-based tasks. Given a mathematical problem, the agent autonomously selects the most appropriate tool, replacing the need for human decision making in tool choice and data preprocessing according to the requirements of the chosen tool. We provide an open-source, zero-cost implementation using Meta’s Llama 3.3 and HuggingFace embeddings. We evalaute mathCrow on datasets from two research papers and complex linear assignment problems (LAP). Results show mathCrow reduces hallucinations, improves autonomous task completion, and confirm that GPT-o reasoning models outperform general models for LAP reasoning tasks.
+mathCrow is a proof-of-concept extension of ChemCrow [1] for math-based tasks. Given a mathematical problem in natural language, the agent autonomously formulates a mathematic problem and selects the most appropriate tool, replacing the need for human decision making in tool choice and data preprocessing according to the requirements of the chosen tool. We provide an open-source, zero-cost implementation using Meta’s Llama 3.3 and HuggingFace embeddings. We evalaute mathCrow on datasets from two research papers and complex linear assignment problems (LAP). Results show mathCrow reduces hallucinations, improves autonomous task completion, and confirm that GPT-o reasoning models outperform general models for LAP reasoning tasks.
 
 ## Description
 
